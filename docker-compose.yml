@@ -1,26 +1,26 @@
 version: '3.8'
 services:
-  movies:
-    image: hpakala53/paytmmovies:latest
+  bags:
+    image: manikantabuddepu/bags:latest
     ports:
-      - "81:80"
+      - "85:80"
     deploy:
       replicas: 3
-  train:
-    image: hpakala53/paytmtrain:latest
+  books:
+    image: manikantabuddepu/books:latest
     ports:
-      - "82:80"
+      - "86:80"
     deploy:
       replicas: 3
-  dth:
-    image: hpakala53/paytmdth:latest
+  pens:
+    image: manikantabuddepu/pens:latest
     ports:
-      - "83:80"
+      - "87:80"
     deploy:
       replicas: 3
-  recharge:
-    image: hpakala53/paytmrecharge:latest
+  boxs:
+    image: manikantabuddepu/boxs:latest
     ports:
-      - "84:80"
+      - "88:80"
     deploy:
       replicas: 3
